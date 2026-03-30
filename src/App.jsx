@@ -19,11 +19,11 @@ function App() {
         Homework 19
       </Typography.Title>
       <Form form={form} onFinish={onFinish} layout="vertical">
-        <Form.Item label="Username" name="username">
+        <Form.Item label="Имя" name="username">
           <Input />
         </Form.Item>
 
-        <Form.Item label="Description" name="description">
+        <Form.Item label="Описание" name="description">
           <Input.TextArea />
         </Form.Item>
 
@@ -36,10 +36,10 @@ function App() {
 
       {username && description && (
         <Card title="Отправленные данные">
-          <Typography.Text strong>Username:</Typography.Text>
+          <Typography.Text strong>Имя:</Typography.Text>
           <Typography.Paragraph>{username}</Typography.Paragraph>
 
-          <Typography.Text strong>Description:</Typography.Text>
+          <Typography.Text strong>Описание:</Typography.Text>
           <Typography.Paragraph>{description}</Typography.Paragraph>
         </Card>
       )}
