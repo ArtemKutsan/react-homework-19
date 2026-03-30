@@ -29,7 +29,7 @@ function App() {
 
         <Form.Item>
           <Button type="primary" htmlType="submit">
-            Submit
+            Отапрвить
           </Button>
         </Form.Item>
       </Form>
