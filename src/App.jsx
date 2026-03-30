@@ -14,11 +14,11 @@ function App() {
   };
 
   return (
-    <Card style={{ width: 320, margin: '0 auto', marginTop: 100, textAlign: 'center' }}>
+    <div style={{ width: '320px', margin: '1rem auto' }}>
       <Typography.Title level={1} style={{ marginBottom: '1rem' }}>
         Homework 19
       </Typography.Title>
-      <Form form={form} onFinish={onFinish}>
+      <Form form={form} onFinish={onFinish} layout="vertical">
         <Form.Item label="Username" name="username">
           <Input />
         </Form.Item>
@@ -35,15 +35,15 @@ function App() {
       </Form>
 
       {username && description && (
-        <>
+        <Card title="Отправленные данные">
           <Typography.Text strong>Username:</Typography.Text>
           <Typography.Paragraph>{username}</Typography.Paragraph>
 
           <Typography.Text strong>Description:</Typography.Text>
           <Typography.Paragraph>{description}</Typography.Paragraph>
-        </>
+        </Card>
       )}
-    </Card>
+    </div>
   );
 }
 
