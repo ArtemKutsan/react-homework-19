@@ -36,11 +36,15 @@ function App() {
 
       {username && description && (
         <Card title="Отправленные данные">
-          <Typography.Text strong>Имя:</Typography.Text>
-          <Typography.Paragraph>{username}</Typography.Paragraph>
+          <Typography.Paragraph>
+            <Typography.Text strong>Имя: </Typography.Text>
+            {username}
+          </Typography.Paragraph>
 
-          <Typography.Text strong>Описание:</Typography.Text>
-          <Typography.Paragraph>{description}</Typography.Paragraph>
+          <Typography.Paragraph>
+            <Typography.Text strong>Описание: </Typography.Text>
+            {description}
+          </Typography.Paragraph>
         </Card>
       )}
     </div>
